@@ -1,0 +1,55 @@
+import pyautogui - Importa o pyautogui.
+import time - Importa o Time para dar atrasos de clicks ou mover.
+
+pyautogui.PAUSE = 1  - Protege contra falhas de cliques. Vai rodar a primeira linha do comando,
+espera 1 segundo, roda a segunda linha do comando, espera 1 segundo, roda a terceira linha do
+comando.
+
+
+# Pegar posição do mouse e o tamanho da tela
+
+print(pyautogui.position()) - Mostra uma posição onde o mouse está na minha tela.
+print(pyautogui.size()) - Mostra o tamanho real do meu monitor.
+
+
+# Funções do mouse
+
+time.sleep(3) - Tempo de atraso para clicar ou mover o mouse.
+pyautogui.click(x, y) - Clicar em uma posição especifica da minha tela.
+pyautogui.moveTo(x, y) - Move o mouse para uma posição especifica da minha tela.
+pyautogui.dragTo(x, y) - Clica que arrasta alguma coisa atá a posição especifica.
+pyautogui.scroll(x, y) - Da scroll na tela, números positivos vai dar scroll para cima, númeoros
+negativos vai dar scroll para baixo
+
+interval=1  - Intervalo de cada clique.
+clicks=10  - Quantidades de clicks na tela.
+duration=3  - Duração de mover o mouse para uma posição da tela.
+
+EX: pyautogui.click(100, 100, clicks=5 interval=2) - Vai clicar 5 vezes na posição x100 y100
+com intervalo de 2 segundos de cada clique.
+
+pyautogui.moveTo(100, 100, duration=3) - Vai mover o mouse até a posição x100 y100
+com duração de 3 segundos até chegar na posição.
+
+pyautogui.dragTo(100, 100, duration=3) - Vai arrastar alguma coisa até a posição x100 y100
+com duração de 3 segundos até chegar na posição (arrastar imagens, arquivos, etc...).
+
+pyautogui.scroll(-100) - Vai para baixo.
+pyautogui.scroll(100) - Vai para cima.
+
+
+# Funções do teclado
+
+pyautogui.write("Hello World") - Vai escrever a palavra em um lugar de texto.
+pyautogui.hotkey("crtl", "s") - Vai pressionar as teclas Crtl + s.
+pyautogui.press("enter") - Vai pressionar a tecla Enter.
+
+interval=1  - Intervalo de cada letra do texto.
+
+EX: pyautogui.write("Hello World", interval=1) - Vai escrever Hello World com intervalo de 1
+segundo para cada letra digitada.
+
+pyautogui.hotkey("crtl", "s") - Pressiona as teclas Crtl + a do seu teclado,
+ fazendo o atalho de salvar o conteúdo.
+
+pyautogui.press("enter") - Vai pressionar a tecla Enter do seu teclado.
