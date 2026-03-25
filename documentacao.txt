@@ -56,3 +56,21 @@ pyautogui.hotkey("crtl", "s") - Pressiona as teclas Crtl + a do seu teclado,
  fazendo o atalho de salvar o conteúdo.
 
 pyautogui.press("enter") - Vai pressionar a tecla Enter do seu teclado.
+
+
+# Função de localizar imagens
+
+imagem_teste = pyautogui.locateOnScreen(imagem.png) - Vai localizar a imagem do conteúdo.
+pyautogui.click(imagem_teste) - Vai clicar na imagem do conteúdo, sem precisar de X, Y.
+
+Salve a imagem primeiro na pasta do conteúdo python do seu projeto e fique no lugar que aquela
+imagem esteja (site, app, etc...)
+
+EX: imagem_teste = pyautogui.locateOnScreen(imagem.png)
+pyautogui.click(imagem_teste) - Rodando isso ele vai procurar a imagem salva na pasta no conteúdo
+da tela. Sem precisar ficar informando as posições X e Y para clicar
+
+
+
+
+Créditos e ajuda: https://youtu.be/h9vEE1KWsI4?si=0T1Sx6MPf2uP7gMP
