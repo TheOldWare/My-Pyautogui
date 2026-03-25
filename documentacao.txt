@@ -5,6 +5,9 @@ pyautogui.PAUSE = 1  - Protege contra falhas de cliques. Vai rodar a primeira li
 espera 1 segundo, roda a segunda linha do comando, espera 1 segundo, roda a terceira linha do
 comando.
 
+pyautogui.FAILSAFE = True  - Proteção de segurança para cancelar a automatização, apenas
+movendo o mouse para o canto esquerdo da tela.
+
 
 # Pegar posição do mouse e o tamanho da tela
 
